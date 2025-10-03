@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     wkhtmltopdf
 
 # Install PHP extensions
-RUN docker-php-ext-install pdo mbstring exif pcntl bcmath gd
+RUN docker-php-ext-install pdo mbstring exif pcntl bcmath gd pdo_pgsql pgsql
 
 # Copy project files
 COPY . .
