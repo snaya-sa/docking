@@ -11,8 +11,7 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     supervisor \
-    nginx \
-    wkhtmltopdf
+    nginx
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo mbstring exif pcntl bcmath gd pdo_pgsql pgsql
